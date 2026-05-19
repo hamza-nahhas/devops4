@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-devops4-deployment
+  labels:
+    app: spring-devops4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-devops4
+  template:
+    metadata:
+      labels:
+        app: spring-devops4
+    spec:
+      containers:
+        - name: spring-devops4
+          image: spring-devops4:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
