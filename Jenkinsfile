@@ -16,8 +16,8 @@ pipeline {
 
         stage('Build Jar') {
             steps {
-                sh 'chmod +x mvnw'
-                sh './mvnw clean package'
+                sh 'chmod +x gradlew'
+                sh './gradlew build'
             }
         }
 
