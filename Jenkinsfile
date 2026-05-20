@@ -8,11 +8,17 @@ pipeline {
 
     stages {
 
-stage('Clean') {
-    steps {
-        deleteDir()
-    }
-}
+        stage('Check Java') {
+            steps {
+                sh 'java -version'
+            }
+        }
+        
+        stage('Clean') {
+            steps {
+                deleteDir()
+            }
+        }
         stage('Clone') {
             steps {
                 git 'https://github.com/hamza-nahhas/devops4' 
