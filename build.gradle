@@ -11,6 +11,8 @@ description = 'devops4'
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(25)
+        vendor = JvmVendorSpec.ADOPTIUM
+
     }
 }
 
