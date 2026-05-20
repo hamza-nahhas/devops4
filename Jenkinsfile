@@ -7,24 +7,6 @@ pipeline {
     }
 
     stages {
-
-        stage('Check Java') {
-            steps {
-                sh 'java -version'
-            }
-        }
-        
-        stage('Clean') {
-            steps {
-                deleteDir()
-            }
-        }
-        stage('Clone') {
-            steps {
-                git 'https://github.com/hamza-nahhas/devops4' 
-            }
-        }
-
         stage('Build Jar') {
             steps {
                 sh 'chmod +x gradlew'
