@@ -45,7 +45,7 @@ Application Running on K8s Pods
 
 | Technology | Purpose |
 |---|---|
-| Java 17 | Backend development |
+| Java 25 | Backend development |
 | Spring Boot | Web application |
 | Gradle | Build tool |
 | Docker | Containerization |
@@ -99,7 +99,7 @@ Hello from Kubernetes!
 Install the following tools before running the project:
 
 - Docker Desktop
-- Java 17
+- Java 25
 - Gradle
 - Minikube
 - kubectl
@@ -144,7 +144,7 @@ build/libs/
 ## Dockerfile
 
 ```dockerfile
-FROM eclipse-temurin:17-jdk
+FROM eclipse-temurin:25-jdk
 
 WORKDIR /app
 
@@ -293,7 +293,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "spring-devops4"
+        IMAGE_NAME = "hamzaallaf/devops4"
     }
 
     stages {
