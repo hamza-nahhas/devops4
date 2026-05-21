@@ -9,7 +9,7 @@ public class WebController {
 
     @GetMapping("/")
     public String index() {
-        return "medical vvv!";
+        return "medical bbb!";
     }
 
     @GetMapping("/hello")
