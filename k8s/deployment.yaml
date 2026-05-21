@@ -17,6 +17,6 @@ spec:
       containers:
         - name: spring-devops4
           image: hamzaallaf/devops4:latest
-          imagePullPolicy: Always  
+          imagePullPolicy: Always  #asd
           ports:
             - containerPort: 8080
