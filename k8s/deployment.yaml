@@ -20,4 +20,3 @@ spec:
           imagePullPolicy: Always  #asdsad
           ports:
             - containerPort: 8080
-d
